@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Banking App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Banking App</h1>
+
+    <h2>Actions:</h2>
+
+    <!-- Link to signup form -->
+    <p><a th:href="@{/signup}">Sign Up</a></p>
+
+    <!-- Link to create account form -->
+    <p><a th:href="@{/create-account}">Create Account</a></p>
+
+    <!-- Link to deposit form -->
+    <p><a th:href="@{/deposit}">Deposit</a></p>
+
+    <!-- Link to withdraw form -->
+    <p><a th:href="@{/withdraw}">Withdraw</a></p>
+
+    <!-- Link to view all accounts  -->
+    <p><a th:href="@{/view-accounts}">View All Accounts</a></p>
+
+    <!-- Link to check balance -->
+    <p><a th:href="@{/checkBalance}">Check Balance</a></p>
+</div>
+</body>
+</html>
